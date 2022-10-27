@@ -15,7 +15,7 @@ Vue ecosystem covers most of the common features needed in frontend development.
 * Jamstack / Static Site Generation (SSG)
 * Targeting desktop, mobile, WebGL, and even the terminal
 
-This player exmaple is simply implemented with Vue3/Vite and Composition API on a starter template which is provided by Vue CLI tools.
+This player example is simply implemented with Vue3/Vite and Composition API on a starter template which is provided by Vue CLI tools.
 
 ## Step-by-Step to integrate THEOplayer Web SDK
 
@@ -60,7 +60,7 @@ Done. Now run:
 Done in 14.52s.
 ```
 
-### 2. Install required componennts
+### 2. Install required components
 
 Run the following command to install Vue framework package dependencies.
 
@@ -125,7 +125,7 @@ onMounted(() => {
 </style>
 ```
 
-#### Add `Player.vue` compnent to `App.vue`
+#### Add `Player.vue` component to `App.vue`
 
 Add the following script code piece to `<script setup>` section in `src/App.vue` after a line for importing `HelloWorld` component.
 
@@ -216,3 +216,48 @@ The screenshot is as belows:
 ## Closing
 
 This repository gives you a sample THEOplayer component for Vue3 by using Vue3 Composition API.
+
+## Using your local THEOplayer Web SDK
+
+If you want to use your own THEOplayer Web SDK, you will need to put your (customized) Web SDK under `public` folder of Vue3 source tree.
+
+Then, you will need to modify the following files to point the location of THEOplayer JS/CSS and library folder appropriately.
+
+* index.html
+* src/components/Player.vue
+
+For example, if you will put the SDK files into `public/js/theoplayer` folder, index.html and `src/components/Player.vue` will be as below:
+
+`index.html`:
+
+```html
+  <head>
+    :
+    <link
+      rel="stylesheet"
+      type="text/css"
+      href="/js/theoplayer/ui.css"
+    />
+  </head>
+```
+
+`index.html`:
+
+```html
+  <body>
+    :
+    <script
+      type="text/javascript"
+      src="/js/theoplayer/THEOplayer.js"
+    ></script>
+  </body>
+```
+
+`src/components/Player.vue`:
+
+```typescript
+    const player = new window.THEOplayer.Player(theoplayer.value, {
+      fluid: true,
+      libraryLocation: "/js/theoplayer/",
+    });
+```
