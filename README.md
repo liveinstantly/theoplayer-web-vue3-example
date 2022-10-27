@@ -72,7 +72,7 @@ yarn install
 
 ### 3. Add THEOplayer
 
-#### Add module declaration (THEOplayer.d.ts)
+#### 3.1 Add module declaration (THEOplayer.d.ts)
 
 Run the following command to install theoplayer NPM package, which includes type definition module for THEOplayer Web SDK.
 
@@ -80,7 +80,7 @@ Run the following command to install theoplayer NPM package, which includes type
 yarn add theoplayer
 ```
 
-#### Add `Player.vue` for THEOplayer Web SDK
+#### 3.2 Add `Player.vue` for THEOplayer Web SDK
 
 Add the following code to `src/components` folder as `Player.vue`.
 This code is based on Vue3 Composition API and works with a given `source` array variable from parent component.
@@ -125,7 +125,7 @@ onMounted(() => {
 </style>
 ```
 
-#### Add `Player.vue` component to `App.vue`
+#### 3.3 Add `Player.vue` component to `App.vue`
 
 Add the following script code piece to `<script setup>` section in `src/App.vue` after a line for importing `HelloWorld` component.
 
@@ -146,7 +146,7 @@ Add the following line to `<template>` section in `src/App.vue` just after the f
     <Player :source="source" v-if="source" />
 ```
 
-#### Add THEOplayer type declaration in `main.ts`
+#### 3.4 Add THEOplayer type declaration in `main.ts`
 
 Add the following script code piece to `src/main.ts` before a line of `createApp` function call.
 
@@ -161,7 +161,7 @@ declare global {
 }
 ```
 
-#### Add THEOplayer JavaScript and CSS module in `index.html`
+#### 3.5 Add THEOplayer JavaScript and CSS module in `index.html`
 
 Add the following lines to `<head>` section in `index.html` (just before `</head>` line) to import THEOplayer CSS.
 
@@ -182,7 +182,7 @@ Add the following lines to `<body>` section in `index.html` (just before `</body
     ></script>
 ```
 
-### 3. Run this sample application code and open with your browser
+### 4. Run this sample application code and open with your browser
 
 Run the following command to compile the codes and run a local server to host the sample application.
 
