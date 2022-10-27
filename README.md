@@ -213,10 +213,6 @@ The screenshot is as belows:
 
 ![Screenshot of THEOplayer Vue3 application example](./docs/images/screenshot-vue3-theoplayer-example.png)
 
-## Closing
-
-This repository gives you a sample THEOplayer component for Vue3 by using Vue3 Composition API.
-
 ## Using your local THEOplayer Web SDK
 
 If you want to use your own THEOplayer Web SDK, you will need to put your (customized) Web SDK under `public` folder of Vue3 source tree.
@@ -261,3 +257,7 @@ For example, if you will put the SDK files into `public/js/theoplayer` folder, i
       libraryLocation: "/js/theoplayer/",
     });
 ```
+
+## Closing
+
+This repository gives you a sample THEOplayer component for Vue3 by using Vue3 Composition API.
