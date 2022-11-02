@@ -15,10 +15,6 @@ Vue は、ユーザー インターフェイスを構築するための進歩的
 
 このプレーヤーの実装例では、Vue CLI ツールによって提供されるスターター テンプレートを使って用意され、Vue3/Vite およびコンポジション API を使用して、プレイヤーを統合しています。
 
-このプレーヤーの実装例の Git リポジトリを GitHub で公開しています: [https://github.com/liveinstantly/theoplayer-web-vue3-example](https://github.com/liveinstantly/theoplayer-web-vue3-example)
-
-詳細は、リポジトリの内容を参照してください。
-
 ## THEOplayer Web SDK を統合するためのステップバイステップ
 
 ### 前提条件
