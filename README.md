@@ -255,6 +255,7 @@ For example, if you will put the SDK files into `public/js/theoplayer` folder, i
     const player = new window.THEOplayer.Player(theoplayer.value, {
       fluid: true,
       libraryLocation: "/js/theoplayer/",
+      license: "<license string>"
     });
 ```
 
