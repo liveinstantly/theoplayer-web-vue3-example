@@ -1,5 +1,7 @@
 # THEOplayer Web SDK と Vue.js v3/Vite フレームワークを使ったストリーミング プレーヤー アプリの実装例
 
+[英語 (English)](./README.md)
+
 このリポジトリでは、シンプルなストリーミング プレーヤー アプリの実装例として、THEOplayer Web SDK と Vue.js v3 フレームワークを統合する方法について公開しています。
 
 THEOplayer は、THEO Technologies によって開発されたユニバーサル ビデオ プレーヤー ソリューションです。 THEOplayer は、複数のプラットフォーム (HTML5 (Web)、Apple iOS、Apple tvOS、Google Android、Google Android TV、Samsumg Tizen、LG webOS、Amazon FireTV、ROKU など) 用のプレーヤー SDK を提供し、HLS、MPEG-DASH、広告、DRM などを様々な機能をサポートします。

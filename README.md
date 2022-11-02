@@ -1,5 +1,7 @@
 # A player example app with THEOplayer Web SDK and Vue3/Vite
 
+[Japanese (日本語)](./README.ja.md)
+
 This is a repository for a player example app with THEOplayer Web SDK and Vue3/Vite.
 
 THEOplayer is the universal video player solution created by THEO Technologies. The THEOplayer offers player SDKs for multiple platforms (such as HTML5 (Web), Apple iOS, Apple tvOS, Google Android, Google Android TV, Samsumg Tizen, LG webOS, Amazon FireTV, ROKU) which support for HLS, MPEG-DASH, advertisements, DRM and much more.
